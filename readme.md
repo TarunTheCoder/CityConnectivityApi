@@ -1,4 +1,4 @@
-#City Connectivity API#
+# City Connectivity API
 This API informs whether two cities in USA are connected via a series of roads. 
 
 ## Tech Stack
