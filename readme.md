@@ -46,7 +46,7 @@ You may have to do additional configuration to get access to additional metrics,
 ## SpringBoot Devtools
 Spring-boot-devtools library has been used to leverage automatic restart feature
 
-##Project Site##
+## Project Site
 Please run *mvn site* to generate project site *index.html* at location *<your-project-path>/target/site/index.html*
 You can open this html file in any browser for more details and analysing project reports.
 Following reports are available here:
