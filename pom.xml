@@ -18,6 +18,12 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
+	<scm>
+		<connection>scm:git:https://github.com/TarunTheCoder/CityConnectivityApi</connection>
+		<developerConnection>scm:git:https://github.com/TarunTheCoder/CityConnectivityApi</developerConnection>
+		<url>https://github.com/TarunTheCoder/CityConnectivityApi</url>
+	</scm>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -99,7 +105,7 @@
 			</plugin>
 		</plugins>
 	</reporting>
-	
+
 	<build>
 		<plugins>
 			<plugin>

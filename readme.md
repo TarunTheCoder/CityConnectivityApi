@@ -1,13 +1,13 @@
 #City Connectivity API#
 This API informs whether two cities in USA are connected via a series of roads. 
 
-##Tech Stack##
+## Tech Stack
 1.	Java 8
 2.	Maven
 3.	SpringBoot v2.0.1.RELEASE
 
 
-##Getting Started##
+## Getting Started
 Simply clone or fork SpringBoot project and import the project into your favorite Java editor. Then simply install with maven and run the project as a SpringBoot app in your editor.
 The app exposes an endpoint: *http://localhost:8080/connected?origin=city1&destination=city2*
 
@@ -21,29 +21,29 @@ Currently this implementation does not work from Command Prompt using *java -jar
 
 This is actually an open [SpringBoot issue](https://github.com/spring-projects/spring-boot/issues/7161).
 
-###Location of Route File###
+#### Location of Route File
 The default name for the route file is *Default.txt* located in *src/main/resources.* 
 The location of the file can be overridden in two ways:
 1.	In application.properties, provide the property *route.file.source.location*. For instance *route.file.source.location=file:///<location>/filename.txt* or,
 2.	Provide the VM argument *-Droute.file.source.location= file:///<location>/filename.txt* while starting the application
 
-##Application Design##
+## Application Design
 - Composition Relationship: A directory of routes (class:Singleton RouteDirectory) contains various routes (class:Route) of connected cities (class: City).
 - Any two or more routes with common cities were programmatically merged into one route, before inserting it into the directory of routes
 - A default data file for routes is provided, which can be overridden at runtime using *route.file.source.location* property
 
-#### Methodologies Used ####
+#### Methodologies Used
 - TDD
 - SOLID Principles
 - Dependency Injection Pattern
 
-##Spring Actuator##
+## Spring Actuator
 The API is enabled with Spring Actuator for monitoring and management. This is indicated by the fact that 
 *http://localhost:8080/actuator/health* yields **up** json message.
 You may have to do additional configuration to get access to additional metrics, details of which are out of scope of this document.
 
 
-##SpringBoot Devtools##
+## SpringBoot Devtools
 Spring-boot-devtools library has been used to leverage automatic restart feature
 
 ##Project Site##
@@ -55,16 +55,16 @@ Following reports are available here:
 3. JaCoCo Code Coverage
 4. JaCoCo Aggregate (Please ignore as this is not a multi-module project)
 
-##Running the Tests##
+## Running the Tests
 Simply run *mvn test*, *mvn install* or *mvn site* to run unit tests as well as integration tests.
 
-##Versioning##
+## Versioning
 I used [SemVer](https://semver.org/) for versioning
 
-##Authors##
+## Authors
 Tarundeep Singh for MC
 
-##Acknowledgements##
+## Acknowledgements
 These are my mentors and I have learned a lot from them
 1. Steve Smith for [SOLID Principles](https://app.pluralsight.com/library/courses/principles-oo-design)
 2. Mark Seemann for [Encapsulation Principles](https://app.pluralsight.com/library/courses/encapsulation-solid/table-of-contents)
